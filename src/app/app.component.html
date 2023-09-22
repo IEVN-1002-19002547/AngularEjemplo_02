@@ -9,36 +9,8 @@
 <body>
 <div class="container">
   <div class="row">
-    <div>
-      <h1>
-        Hola Mundo Angular
-      </h1>
-    </div>
-    <div>
-      {{title}}
-    </div>
-    <div>
-      La suma de 2 + 2 es {{2+2}}
-    </div>
-    <div>
-      El sobel del 3 es {{duplicarNumero(3)}}
-    </div>
-    <div>
-      <h2>Datos de la pelicula</h2>
-      <div>
-        {{pelicula.titulo}}
-      </div>
-      <div>
-        {{pelicula.fechadeLanzamiento}}
-        <br>
-        {{pelicula.fechadeLanzamiento | date}}
-        <br>
-        {{pelicula.fechadeLanzamiento | date:"dd-MM-yy"}}
-      </div>
-      <div>
-        {{pelicula.precio | currency}}
-      </div>
-    </div>
+    {{title}}
+    <app-product-list></app-product-list>
   </div>
 </div>
 </body>
