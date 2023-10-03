@@ -7,11 +7,9 @@ import { ProductoFilterPipe } from './product/producto-filter.pipe';
 import { OperasBasComponent } from './formularios/operas-bas/operas-bas.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Suma2Component } from './formularios/suma2/suma2.component';
-import { MatInputModule } from '@angular/material/input'
-import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MaterialModule } from './material/material/material.module';
 import { MenuComponent } from './menu/menu/menu.component';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -26,10 +24,7 @@ import { MatIconModule } from '@angular/material/icon';
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatInputModule,
-    MatButtonModule,
-    MatIconModule,
-    MatToolbarModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
